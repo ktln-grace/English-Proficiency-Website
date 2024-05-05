@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Default */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background: #fff;
+}
+
+/* Navigation Bar Style */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #09001d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.header img{
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+}
+.logo {
+    font-size: 28px;
+    color: #fff;
+    text-decoration: none;
+    position: fixed;
+    padding-left: 55px;
+    font-weight: 700;
+    text-transform: uppercase;
+    filter: drop-shadow(0 0 5px #09001d);
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    transition: .3s;
+}
+li a:hover {
+    background-color: #09cee819;
+}
+.navbar .active {
+    background-color: #08244D;
+}
+.navbar li .active{
+    border-top: 3px solid #09CFE8; 
+}
+
+.name {
+    color: #09CFE8;
+}
+
+/* Tiktok Page */
+
+
+
+/* Quizzes Page */
+.main-container {
+    padding: 20px 0;
+    margin-top: 15%;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    min-height: 400px;
+    display: grid;
+    grid-template-rows: 20px 50px 1fr 50px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+    overflow: hidden;
+}
+.card:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+}
+.card__link {
+    position: relative;
+    text-decoration: none;
+    color: #100E13;
+}
+.card__link::after {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: all 0.5s;
+}
+.card__link:hover::after {
+    width: 100%;
+}
+.card__title {
+    grid-row: 3/4;
+    font-weight: 400;
+    color: #100E13;
+    font-weight: 500;
+    margin-top: -70px;
+}
+.card__apply {
+    grid-row: 4/5;
+    align-self: center;
+    font-weight: 500;
+    font-style: italic;
+}
+.card-1 {
+    background:#00A9BF;
+}
+.card-2 {
+    background:#0096AA;
+}
+.card-3 {
+    background:#008494;
+}
+.card-4 {
+    background:#00717F;
+}
+.card-5 {
+    background:#005E6A;
+}
+.container {
+    background-color: #fff;
+    margin-top: 60px;
+    height: 250px;
+    width: 400px;
+    border-radius: 10px;
+}
+.container p {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: 400;
+}
+.card_img {
+    width: 300px;
+    margin: 5px 0 0 10px;
+    border-radius: 6px;
+}
+
+/* Responsiveness */
+@media (max-width: 1600px) {
+    .cards {
+    justify-content: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .navbar {
+        display: none;
+        transition: 3s ease-in;
+    }
+}
+
+/* Mobile Phone */
+@media screen and (max-width: 450px) {
+    .logo {
+        
+    font-size: 22px;
+    }
+}
+
+
+/*Discussion Board*/
+
