@@ -269,3 +269,104 @@ li a:hover {
     text-align: justify;
     padding: 20px;
 }
+
+/*Prompt*/
+.prompt {
+    background-color: #00717F;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prompt-content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 700px;
+    margin-top: -100px;
+}
+
+.prompt img {
+    height: 150px;
+}
+
+.prompt-content h2 {
+    font-size: 50px;
+    color: #fff;
+}
+
+.prompt-content p {
+    color: #fff;
+    padding-bottom: 30px;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;  
+    padding: 10px 22%;
+}
+
+.buttons a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+    padding: 8px 55px;
+    border-radius: 50px;
+    border: solid #fff;
+}
+
+#cancel {
+    background-color: transparent;
+}
+
+#proceed {
+    background-color: #fff;
+    color: #005E6A;
+    font-weight: 600;
+}
+
+.instruction {
+    background-color: #00717F;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.instruction-content {
+    max-width: 85%;
+}
+
+.instruction-content h3 {
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.instruction-content .sub-title {
+    padding-bottom: 50px;
+}
+
+.instruction-content p {
+    font-size: 18px;
+    padding-bottom: 100px;
+}
+
+.instruction-content a {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+    padding: 7px 5px;
+    border-radius: 50px;
+    border: solid #fff;
+}

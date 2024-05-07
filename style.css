@@ -94,22 +94,23 @@ body{
     margin-bottom: 30px;
 }
 
-.home-content .start-btn {
-    width: 190px;
-    height: 55px;
-    background: #09CFE8;
-    border: 2px solid #fff;
-    outline: none;
-    border-radius: 6px;
-    box-shadow: 0 0 10px #09CFE8;
+.home-content a {
     font-size: 18px;
     color: #fff;
-    letter-spacing: 1px;
-    font-weight: 600;
-    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+    padding: 8px 55px;
+    border-radius: 50px;
+    background: #09CFE8;
+    box-shadow: none;
+    color: #09001d;
+    border: solid #09CFE8;
 }
 
-.home-content .start-btn:hover {
-    background: #09001d;
+.home-content a:hover {
     box-shadow: none;
+    border: solid #fff;
+    background-color: transparent;
+    color: #fff;
 }
