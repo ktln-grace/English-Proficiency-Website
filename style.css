@@ -17,6 +17,7 @@ body{
     left: 0;
     width: 100%;
     padding: 20px 10%;
+    padding-top: 30px;
     background-color: transparent;
     display: flex;
     justify-content: space-between;
@@ -24,12 +25,11 @@ body{
     z-index: 100;
 }
 
-.logo {
-    font-size: 32px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 700;
-    filter: drop-shadow(0 0 5px #09001d);
+.header img{
+    height: 80px;
+    width: 80px;
+    padding: 0;
+    object-fit: contain;
 }
 
 .navbar a{

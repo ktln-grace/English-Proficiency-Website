@@ -16,7 +16,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
+    padding: 10px 10%;
     background: #09001d;
     display: flex;
     justify-content: space-between;
@@ -24,20 +24,12 @@ body {
     z-index: 100;
 }
 .header img{
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
+    padding: 0;
     object-fit: contain;
 }
-.logo {
-    font-size: 28px;
-    color: #fff;
-    text-decoration: none;
-    position: fixed;
-    padding-left: 55px;
-    font-weight: 700;
-    text-transform: uppercase;
-    filter: drop-shadow(0 0 5px #09001d);
-}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -50,7 +42,7 @@ li {
 li a {
     display: block;
     text-align: center;
-    padding: 14px 16px;
+    padding: 12px 16px;
     text-decoration: none;
     font-size: 18px;
     color: #fff;
@@ -61,7 +53,7 @@ li a:hover {
     background-color: #09cee819;
 }
 .navbar .active {
-    background-color: #08244D;
+    color: #09CFE8;
 }
 .navbar li .active{
     border-top: 3px solid #09CFE8; 
@@ -201,6 +193,7 @@ li a:hover {
         display: none;
         transition: 3s ease-in;
     }
+
 }
 
 /* Mobile Phone */
@@ -212,5 +205,67 @@ li a:hover {
 }
 
 
-/*Discussion Board*/
+/*About*/
+.title {
+    padding-top: 150px;
+}
 
+.title h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+
+.title p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.about {
+    display: flex;
+    margin: 0 10%;
+    padding-top: 100px;
+    justify-content: center;
+}
+
+.about img {
+    width: 800px;
+    height: 500px;
+}
+
+.about p {
+    padding-left: 50px;
+    padding-top: 150px;
+    text-align: justify;
+}
+
+.about p span {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.about-content{
+    margin: 0 10%;
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+.about-content .mission {
+    text-align: justify;
+    padding: 20px;
+}
+
+.about-content h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.about-content .vision {
+    text-align: justify;
+    padding: 20px;
+}
