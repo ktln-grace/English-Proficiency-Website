@@ -65,19 +65,19 @@ const questions = [
     {
         question: "It is a short fictitious story that illustrate a moral attitude or a religious principle.",
         answers: [
-            {text: "Short Story", correct: true},
+            {text: "Short Story", correct: false},
             {text: "Novel", correct: false},
             {text: "Poem", correct: false},
-            {text: "Parable", correct: false},
+            {text: "Parable", correct: true},
         ]
     },
     {
         question: "“Like” or “As” use in what type of figurative language?",
         answers: [
-            {text: "Simile", correct: false},
+            {text: "Simile", correct: true},
             {text: "Personification", correct: false},
             {text: "Hyperbole", correct: false},
-            {text: "Oxymoron", correct: true},
+            {text: "Oxymoron", correct: false},
         ]
     },
     {
