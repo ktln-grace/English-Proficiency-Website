@@ -1,92 +1,92 @@
 const questions = [
     {
-        question: "She _______ to the store yesterday.",
+        question: "We will only sell our house as a last “ resort “ to pay our debts.",
         answers: [
-            {text: "had went", correct: true},
-            {text: "had gone", correct: false},
-            {text: "went", correct: false},
-            {text: "go", correct: false},
+            {text: "Recourse", correct: true},
+            {text: "Retreat", correct: false},
+            {text: "Conduct", correct: false},
+            {text: "Haunt", correct: false},
         ]
     },
     {
-        question: "He usually _______ to the gym after work.",
+        question: "The editor didn’t want to be “ distracted” while working on the minute details of the movie.",
         answers: [
-            {text: "go", correct: false},
-            {text: "goes", correct: true},
-            {text: "going", correct: false},
-            {text: "gone", correct: false},
+            {text: "Deceased", correct: false},
+            {text: "Discerning", correct: false},
+            {text: "Dissenting", correct: false},
+            {text: "Disturbed", correct: true},
         ]
     },
     {
-        question: "Which sentence contains the correct past tense verb form?",
+        question: "Rodel was “ appointed “ as treasurer of the class.",
         answers: [
-            {text: "He flied to London last week.", correct: false},
-            {text: "He flew to London last week.", correct: true},
-            {text: "He flyed to London last week.", correct: false},
-            {text: "He flown to London last week.", correct: false},
+            {text: "Alotted", correct: false},
+            {text: "Confessed", correct: false},
+            {text: "Assignend", correct: true},
+            {text: "Enacted", correct: false},
         ]
     },
     {
-        question: "The children ____ playing in the park.",
+        question: "There were many “ complications “ after the surgery but he survived.",
         answers: [
-            {text: "is", correct: false},
-            {text: "are", correct: true},
-            {text: "am", correct: false},
-            {text: "be", correct: false},
+            {text: "Difficulty", correct: true},
+            {text: "Sequences", correct: false},
+            {text: "Complements", correct: false},
+            {text: "Complicities", correct: false},
         ]
     },
     {
-        question: "Choose the sentence with the correct verb tense:",
+        question: "The makeup reflects light and give the skin a “ luminous “ glow.",
         answers: [
-            {text: "I am studying for my exam tomorrow.", correct: true},
-            {text: "I studying for my exam tomorrow.", correct: false},
-            {text: "I was studying for my exam tomorrow.", correct: false},
-            {text: "I will studying for my exam tomorrow.", correct: false},
+            {text: "Bright", correct: true},
+            {text: "Ecstatic", correct: false},
+            {text: "Perplexed", correct: false},
+            {text: "Exhilarating", correct: false},
         ]
     },
     {
-        question: "Choose the correct sentence:",
+        question: "If I could find a woman that “frugal”, I might just settle down.",
         answers: [
-            {text: "The desk and the chair sits in the corner.", correct: true},
-            {text: "The desk and the chair sit in the corner.", correct: false},
-            {text: "Both A and B are correct.", correct: false},
-            {text: "None of the above", correct: false},
+            {text: "Thrifty", correct: false},
+            {text: "Stingy", correct: false},
+            {text: "Lavish", correct: true},
+            {text: "Economical", correct: false},
         ]
     },
     {
-        question: "Choose the correct sentence:",
+        question: "It turns out, however, their motives are not so “benevolent”.",
         answers: [
-            {text: "Each of us was scheduled to take the test.", correct: false},
-            {text: "Each of us were scheduled to take the test.", correct: true},
-            {text: "Both A and B are correct.", correct: false},
-            {text: "None of the above", correct: false},
+            {text: "Angry", correct: false},
+            {text: "Generous", correct: true},
+            {text: "Disorganized", correct: false},
+            {text: "Timid", correct: false},
         ]
     },
     {
-        question: "Choose the correct sentence:",
+        question: "Computers are becoming increasingly “ubiquitous”.",
         answers: [
-            {text: "The coach, not the players, has been ill.", correct: true},
-            {text: "The coach, not the players, have been ill.", correct: false},
-            {text: "Both A and B are correct.", correct: false},
-            {text: "None of the above", correct: false},
+            {text: "Rare", correct: false},
+            {text: "Scattered", correct: false},
+            {text: "Everywhere", correct: true},
+            {text: "Limited", correct: false},
         ]
     },
     {
-        question: "Choose the correct sentence:",
+        question: "You're a “naive” little child.",
         answers: [
-            {text: "There are only four days until Christmas.", correct: true},
-            {text: "There’s only four days until Christmas.", correct: false},
-            {text: "Both A and B are correct.", correct: false},
-            {text: "None of the above", correct: false},
+            {text: "Innocent", correct: true},
+            {text: "Rude", correct: false},
+            {text: "Cute", correct: false},
+            {text: "Mad", correct: false},
         ]
     },
     {
-        question: "Choose the correct sentence:",
+        question: "Remember you can always “eschew” the name in favor of just a heart.",
         answers: [
-            {text: "She is one of those women who works hard.", correct: false},
-            {text: "She is one of those women who work hard.", correct: true},
-            {text: "Both A and B are correct.", correct: false},
-            {text: "None of the above", correct: false},
+            {text: "Embrace", correct: false},
+            {text: "Avoid", correct: true},
+            {text: "Approach", correct: false},
+            {text: "Engage", correct: false},
         ]
     },
 ];
@@ -157,6 +157,8 @@ function showScore(){
     nextButton.style.display = "block";
     
 }
+
+
 
 function handleNextButton(){
     currentQuestionIndex++;
