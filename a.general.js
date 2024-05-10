@@ -1,52 +1,92 @@
 const questions = [
     {
-        question: "Athens had _______ the other Greek city-states against the Persians.",
+        question: "What is the synonym of “advance”?",
         answers: [
-            {text: "refused help to", correct: false},
-            {text: "intervened on behalf of", correct: true},
-            {text: "wanted to fight", correct: false},
-            {text: "given orders for all to fight", correct: false},
-            {text: "defeated", correct: false},
+            {text: "Discuss", correct: false},
+            {text: "Traffic", correct: false},
+            {text: "Proceed", correct: true},
+            {text: "Contain", correct: false},
         ]
     },
     {
-        question: "Darius took drastic steps to ______ the rebellious Athenians.",
+        question: "It refers to a form or instance of something that involves more than one.",
         answers: [
-            {text: "weaken", correct: false},
-            {text: "destroy", correct: false},
-            {text: "calm", correct: true,
-            {text: "irritate", correct: false},
-            {text: "none of the above", correct: true},
+            {text: "Singular", correct: false},
+            {text: "Plural", correct: true},
+            {text: "Conjunction", correct: false},
+            {text: "Noun", correct: false},
         ]
     },
     {
-        question: "Their participation _______ to the Athenians.",
+        question: "What is the synonym of “flee”?",
         answers: [
-            {text: "gave comfort", correct: false},
-            {text: "gave honor", correct: true},
-            {text: "gave strength", correct: false},
-            {text: "gave fear", correct: false},
-            {text: "gave hope", correct: false},
+            {text: "Man", correct: false},
+            {text: "Oak", correct: false},
+            {text: "Ace", correct: false},
+            {text: "Run", correct: true},
         ]
     },
     {
-        question: "The people of Delos did not want to ____ the conquest of Greece.",
+        question: "It refers to words that have similar things.",
         answers: [
-            {text: "end", correct: false},
-            {text: "encourage", correct: true},
-            {text: "think about", correct: false},
-            {text: "daydream about", correct: false},
-            {text: "none of the above", correct: false},
+            {text: "Antonym", correct: false},
+            {text: "Synonym", correct: true},
+            {text: "Preposition", correct: false},
+            {text: "Verb", correct: false},
         ]
     },
     {
-        question: "The Athenians were _______ by some soldiers who arrived from Plataea.",
+        question: "It is a noun, pronoun, or phrase that receives the action of the verb or is affected by the action.",
         answers: [
-            {text: "welcomed", correct: false},
-            {text: "strengthened", correct: true},
-            {text: "held", correct: false},
-            {text: "captured", correct: false},
-            {text: "none of the above", correct: false},
+            {text: "Object", correct: true},
+            {text: "Subject", correct: false},
+            {text: "Noun", correct: false},
+            {text: "Pronoun", correct: false},
+        ]
+    },
+    {
+        question: "_____ is an action word",
+        answers: [
+            {text: "Noun", correct: false},
+            {text: "Pronoun", correct: false},
+            {text: "Verb", correct: true},
+            {text: "Adjective", correct: false},
+        ]
+    },
+    {
+        question: "It is a word used to connect clauses or sentences or to coordinate words.",
+        answers: [
+            {text: "Conjunction", correct: true},
+            {text: "Past Tense", correct: false},
+            {text: "Personification", correct: false},
+            {text: "Hyperbole", correct: false},
+        ]
+    },
+    {
+        question: "It is a short fictitious story that illustrate a moral attitude or a religious principle.",
+        answers: [
+            {text: "Short Story", correct: true},
+            {text: "Novel", correct: false},
+            {text: "Poem", correct: false},
+            {text: "Parable", correct: false},
+        ]
+    },
+    {
+        question: "“Like” or “As” use in what type of figurative language?",
+        answers: [
+            {text: "Simile", correct: false},
+            {text: "Personification", correct: false},
+            {text: "Hyperbole", correct: false},
+            {text: "Oxymoron", correct: true},
+        ]
+    },
+    {
+        question: "It is a spoken or written account of connected events; a story: “a gripping narrative” Word with similar meanings account, story, tale, chronicle, history, description, record.",
+        answers: [
+            {text: "Interogative Speech", correct: false},
+            {text: "Narrative Speech", correct: true},
+            {text: "Persuasive Speech", correct: false},
+            {text: "Impromptu Speech", correct: false},
         ]
     },
 ];
@@ -117,8 +157,6 @@ function showScore(){
     nextButton.style.display = "block";
     
 }
-
-
 
 function handleNextButton(){
     currentQuestionIndex++;
