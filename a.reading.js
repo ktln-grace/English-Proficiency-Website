@@ -14,9 +14,9 @@ const questions = [
         answers: [
             {text: "weaken", correct: false},
             {text: "destroy", correct: false},
-            {text: "calm", correct: true,
+            {text: "calm", correct: true},
             {text: "irritate", correct: false},
-            {text: "none of the above", correct: true},
+            {text: "none of the above", correct: false},
         ]
     },
     {
@@ -113,12 +113,10 @@ function selectAnswer(e){
 function showScore(){
     resetState();
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
-    nextButton.innerHTML = 'Try Again';
+    nextButton.innerHTML = 'Exit Quiz';
     nextButton.style.display = "block";
     
 }
-
-
 
 function handleNextButton(){
     currentQuestionIndex++;
@@ -130,12 +128,16 @@ function handleNextButton(){
     }
 }
 
+function exitQuiz(){
+    window.location.href = '2.quizzes.html';
+}
+
 nextButton.addEventListener("click", ()=> {
     if(currentQuestionIndex < questions.length){
         handleNextButton();
     }
     else{
-        startQuiz();
+        exitQuiz();
     }
 });
 

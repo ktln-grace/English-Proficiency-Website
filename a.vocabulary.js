@@ -153,12 +153,10 @@ function selectAnswer(e){
 function showScore(){
     resetState();
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
-    nextButton.innerHTML = 'Try Again';
+    nextButton.innerHTML = 'Exit Quiz';
     nextButton.style.display = "block";
     
 }
-
-
 
 function handleNextButton(){
     currentQuestionIndex++;
@@ -170,12 +168,16 @@ function handleNextButton(){
     }
 }
 
+function exitQuiz(){
+    window.location.href = '2.quizzes.html';
+}
+
 nextButton.addEventListener("click", ()=> {
     if(currentQuestionIndex < questions.length){
         handleNextButton();
     }
     else{
-        startQuiz();
+        exitQuiz();
     }
 });
 
