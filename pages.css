@@ -119,19 +119,20 @@ li a:hover {
     transform: scale(1.01);
 }
 .card__link {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 120px;
+    font-size: 14px;
+    color: #fff;
     text-decoration: none;
-    color: #100E13;
-}
-.card__link::after {
-    position: absolute;
-    top: 25px;
-    left: 0;
-    content: "";
-    width: 0%;
-    height: 3px;
-    background-color: rgba(255, 255, 255, 0.6);
-    transition: all 0.5s;
+    transition: .3s;
+    padding: 4px 10px;
+    border-radius: 20px;
+    border: solid #ffffffae;
+    transition: 0.3s;
+    margin-top: 20px;
 }
 .card__link:hover::after {
     width: 100%;
@@ -213,7 +214,6 @@ li a:hover {
     width: 100%;
     background: #03c5df2f;
 }
-
 
 /*About*/
 .title {
