@@ -70,7 +70,7 @@ li a:hover {
 
 /* Quizzes Page */
 .quiz {
-    height: 100vh;
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -164,6 +164,18 @@ li a:hover {
 .card-5 {
     background:#005E6A;
 }
+.card-6 {
+    background:#0096AA;
+}
+.card-7 {
+    background:#008494;
+}
+.card-8 {
+    background:#00717F;
+}
+.card-9 {
+    background:#005E6A;
+}
 .container {
     background-color: #fff;
     margin-top: 60px;
@@ -181,6 +193,27 @@ li a:hover {
     margin: 5px 0 0 10px;
     border-radius: 6px;
 }
+.main-container {
+    padding-top: 50px;
+}
+.quiz-title h1{
+    font-size: 70px;
+    font-weight: 800;
+}
+.quiz-title p {
+    font-size: 20px;
+    font-weight: 400;
+}
+.quiz-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 40vh;
+    width: 100%;
+    background: #03c5df2f;
+}
+
 
 /*About*/
 .title {
