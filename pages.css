@@ -28,6 +28,7 @@ body {
     width: 80px;
     padding: 0;
     object-fit: contain;
+    cursor: pointer;
 }
 
 ul {
