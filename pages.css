@@ -182,9 +182,21 @@ li a:hover {
 }
 
 /* Responsiveness */
+@media screen and (max-width: 1800px) {
+    .main-container {
+        margin-top: 300px;
+    }
+}
+
 @media (max-width: 1600px) {
     .cards {
     justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .main-container {
+        margin-top: 800px;
     }
 }
 
@@ -192,6 +204,12 @@ li a:hover {
     .navbar {
         display: none;
         transition: 3s ease-in;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .main-container {
+        margin-top: 1650px;
     }
 }
 
