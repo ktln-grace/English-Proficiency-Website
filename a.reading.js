@@ -1,52 +1,92 @@
 const questions = [
     {
-        question: "Athens had _______ the other Greek city-states against the Persians.",
+        question: "The word vast in paragraph 1 is closest in meaning to _____.",
         answers: [
-            {text: "refused help to", correct: false},
-            {text: "intervened on behalf of", correct: true},
-            {text: "wanted to fight", correct: false},
-            {text: "given orders for all to fight", correct: false},
-            {text: "defeated", correct: false},
+            {text: "very large", correct: false},
+            {text: "pretty", correct: true},
+            {text: "small", correct: false},
+            {text: "faraway", correct: false},
         ]
     },
     {
-        question: "Darius took drastic steps to ______ the rebellious Athenians.",
+        question: "The closest in meaning to the word landscape in paragraph 1 is _____.",
         answers: [
-            {text: "weaken", correct: false},
-            {text: "destroy", correct: false},
-            {text: "calm", correct: true},
-            {text: "irritate", correct: false},
-            {text: "none of the above", correct: false},
+            {text: "an area of land for living", correct: false},
+            {text: "a painting", correct: false},
+            {text: "an icy environment", correct: true},
+            {text: "the way an area of land looks", correct: false},
         ]
     },
     {
-        question: "Their participation _______ to the Athenians.",
+        question: "The closest in meaning to the word preserved in paragraph 2 is _____.",
         answers: [
-            {text: "gave comfort", correct: false},
-            {text: "gave honor", correct: true},
-            {text: "gave strength", correct: false},
-            {text: "gave fear", correct: false},
-            {text: "gave hope", correct: false},
+            {text: "closed", correct: false},
+            {text: "explored", correct: true},
+            {text: "protected", correct: false},
+            {text: "changed", correct: false},
         ]
     },
     {
-        question: "The people of Delos did not want to ____ the conquest of Greece.",
+        question: "The closest in meaning to the word inhabit in paragraph 2 is_____.",
         answers: [
-            {text: "end", correct: false},
-            {text: "encourage", correct: true},
-            {text: "think about", correct: false},
-            {text: "daydream about", correct: false},
-            {text: "none of the above", correct: false},
+            {text: "avoid", correct: false},
+            {text: "cover", correct: true},
+            {text: "prefer", correct: false},
+            {text: "livein", correct: false},
         ]
     },
     {
-        question: "The Athenians were _______ by some soldiers who arrived from Plataea.",
+        question: "The word harsh in paragraph 2 is closest in meaning to _____.",
         answers: [
-            {text: "welcomed", correct: false},
-            {text: "strengthened", correct: true},
-            {text: "held", correct: false},
-            {text: "captured", correct: false},
-            {text: "none of the above", correct: false},
+            {text: "unpleasantly difficult", correct: false},
+            {text: "mild", correct: true},
+            {text: "dry", correct: false},
+            {text: "cold", correct: false},
+        ]
+    },
+    {
+        question: "The word remote in paragraph 2 is closest in meaning to _____.",
+        answers: [
+            {text: "ideal", correct: false},
+            {text: "isolated", correct: true},
+            {text: "hostile", correct: false},
+            {text: "lonely", correct: false},
+        ]
+    },
+    {
+        question: "The word disturb in paragraph 3 is closest in meaning to _____.",
+        answers: [
+            {text: "make somebody/something happy", correct: false},
+            {text: "bring somebody/something comfort", correct: true},
+            {text: "annoy somebody/something", correct: false},
+            {text: "cause somebody/something to die", correct: false},
+        ]
+    },
+    {
+        question: "The word temporary in paragraph 4 is closest in meaning to _____.",
+        answers: [
+            {text: "rich and adventurous", correct: false},
+            {text: "careful", correct: true},
+            {text: "lasting for a limited time", correct: false},
+            {text: "responsible", correct: false},
+        ]
+    },
+    {
+        question: "The word consequences in paragraph 5 is closest in meaning to _____.",
+        answers: [
+            {text: "acquaintances", correct: false},
+            {text: "effects", correct: true},
+            {text: "causes", correct: false},
+            {text: "disasters", correct: false},
+        ]
+    },
+    {
+        question: "The word fragile in paragraph 5 is closest in meaning to _____.",
+        answers: [
+            {text: "native", correct: false},
+            {text: "rare", correct: true},
+            {text: "useful", correct: false},
+            {text: "easily damaged", correct: false},
         ]
     },
 ];
