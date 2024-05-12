@@ -6,85 +6,6 @@
     <title>About | Quizzy. </title>
     <link rel="stylesheet" href="pages.css">
 </head>
-<style>
-.carousel {
-    position: relative;
-    overflow: hidden;
-    width: 80%; 
-    margin: 0 auto; 
-    margin-bottom: 100px;
-    }
-
-.carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.carousel img {
-    width: 400px;
-    transition: filter 0.3s ease; 
-}
-
-.carousel img:hover {
-  filter: brightness(40%);
-}
-
-.carousel .image-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 400px;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-  opacity: 0; /* Initially hidden */
-  transition: opacity 0.3s ease; /* Smooth transition for opacity */
-}
-
-.carousel-inner:hover .image-overlay {
-  opacity: 1; /* Show the overlay on hover */
-}
-.carousel .carousel-item {
-  position: relative; /* Position context for the image overlay and name */
-}
-.carousel .image-name {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s ease; /* Smooth transition for opacity */
-}
-
-.carousel-inner:hover .image-name {
-  opacity: 1; /* Show the name on hover */
-}
-
-.carousel button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 1;
-    font-size: 18px;
-}
-
-.prev {
-  left: 0;
-}
-
-.next {
-  right: 0;
-}
-
-</style>
 <body>
     <main class="main">
         <header class="header">
@@ -122,156 +43,94 @@
                 <p>Quizzy envisions developing strong, positive bonds with students, encouraging them to pursue long-term independence in learning, develop confidence beginning in proficiency, and gaining lasting academic knowledge; thus creating individuals who are well-rounded, and can easily adapt in a rapidly changing post-modern globalized environment.</p>
             </div>
         </div>
-        <div class="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item">
-                    <img src="members/AGUSTIN.jpg" alt="Image 1">
-                        <div class="image-overlay">
-                            <div class="image-name">Anne Therese Agustin</div>
-                        </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="members/CARREON.jpg" alt="Image 2">
-                        <div class="image-overlay">
-                            <div class="image-name">Carreon</div>
-                        </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="members/CASTRO.jpg" alt="Image 3">
-                        <div class="image-overlay">
-                            <div class="image-name">Mark Rafa Castro</div>
-                        </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="members/CORNEJO.jpg" alt="Image 4">
-                        <div class="image-overlay">
-                            <div class="image-name">Darren Cornejo</div>
-                        </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="members/GUZMAN.jpg" alt="Image 5">
-                        <div class="image-overlay">
-                            <div class="image-name">Guzman</div>
-                        </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="members/ISIP.jpg" alt="Image 6">
-                        <div class="image-overlay">
-                            <div class="image-name">Michelle Ann Isip</div>
-                        </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="members/LAYOSA.jpg" alt="Image 7">
-                        <div class="image-overlay">
-                            <div class="image-name">Hannah Layosa</div>
-                        </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="members/REODIQUE.jpg" alt="Image 8">
-                        <div class="image-overlay">
-                            <div class="image-name">Ella Cristina Reodique</div>
-                        </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="members/SANTOS.jpg" alt="Image 9">
-                        <div class="image-overlay">
-                            <div class="image-name">Jemimah Santos</div>
-                        </div>
-                </div>
-              <!-- Add more carousel items as needed -->
-            </div>
-            <button class="prev">&#10094;</button>
-            <button class="next">&#10095;</button>
-          </div>
-          
     </section>
+
+    <section class="children">
+        <div class="containers">
+            <div class="wrapper">
+                <div class="cards">
+                    <img src="members/AGUSTIN.jpg">
+                <div class="info">
+                    <h1>Ann Therese T. Agustin</h1>
+                    <p>atagustin1030ant@student.fatima.edu.ph</p>
+                </div>
+            </div>
+
+            <div class="cards">
+                <img src="members/CARREON.jpg">
+                <div class="info">
+                    <h1>Carreon</h1>
+                </div>
+            </div>
+
+            <div class="cards">
+                <img src="members/CASTRO.jpg">
+                <div class="info">
+                    <h1>Mark Rafa Castro </h1>
+                    <p>mrcastro2233ant@student.fatima.edu.ph</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="wrapper">
+                <div class="cards">
+                    <img src="members/CORNEJO.jpg">
+                <div class="info">
+                    <h1>Darren B. Cornejo</h1>
+                    <p>dbcornejo0030ant@student.fatima.edu.ph</p>
+                </div>
+            </div>
+
+            <div class="cards">
+                <img src="members/GUZMAN.jpg">
+                <div class="info">
+                    <h1>Guzman</h1>
+                </div>
+            </div>
+
+            <div class="cards">
+                <img src="members/ISIP.jpg">
+                <div class="info">
+                    <h1>Michelle Ann O. Isip</h1>
+                    <p>moisip0970ant@student.fatima.edu.ph</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+                <div class="cards">
+                    <img src="members/LAYOSA.jpg">
+                <div class="info">
+                    <h1>Hannah H. Layosa</h1>
+                    <p>hhlayosa9972ant@student.fatima.edu.ph</p>
+                </div>
+            </div>
+
+            <div class="cards">
+                <img src="members/REODIQUE.jpg">
+                <div class="info">
+                    <h1>Ella Cristina S. Reodique</h1>
+                    <p>esreodique8183ant@student.fatima.edu.ph</p>
+                </div>
+            </div>
+
+            <div class="cards">
+                <img src="members/SANTOS.jpg">
+                <div class="info">
+                    <h1>Jemimah A. Santos</h1>
+                    <p>jasantos2278ant@student.fatima.edu.ph</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer">
+            <p>&#169; 2024 Make it Quizzy All Right Reserved</p>
+        </div>
+    </footer>
+
 </body>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-    const carousel = document.querySelector('.carousel');
-    const carouselInner = document.querySelector('.carousel-inner');
-    const prevButton = document.querySelector('.prev');
-    const nextButton = document.querySelector('.next');
-
-    let isDragging = false;
-    let startPosition = 0;
-    let currentTranslate = 0;
-    let prevTranslate = 0;
-
-    carousel.addEventListener('mousedown', dragStart);
-    carousel.addEventListener('touchstart', dragStart);
-
-    function dragStart(event) {
-        if (event.type === 'touchstart') {
-            startPosition = event.touches[0].clientX;
-        } else {
-            startPosition = event.clientX;
-            document.addEventListener('mousemove', drag);
-            document.addEventListener('mouseup', dragEnd);
-        }
-
-        isDragging = true;
-
-        carouselInner.style.transition = 'none';
-    }
-
-    function drag(event) {
-        if (isDragging) {
-            const currentPosition = event.type === 'touchmove' ? event.touches[0].clientX : event.clientX;
-            const difference = currentPosition - startPosition;
-
-            currentTranslate = prevTranslate + difference;
-
-            carouselInner.style.transform = `translateX(${currentTranslate}px)`;
-        }
-    }
-
-    function dragEnd() {
-        isDragging = false;
-
-        const threshold = carousel.offsetWidth / 4;
-        const slideIndex = Math.round(currentTranslate / carousel.offsetWidth);
-
-        prevTranslate = currentTranslate;
-
-        if (slideIndex >= 0) {
-            carouselInner.style.transform = 'translateX(0)';
-        } else if (slideIndex <= -(carouselInner.children.length - 1)) {
-            carouselInner.style.transform = `translateX(-${(carouselInner.children.length - 1) * 100}%)`;
-        } else if (Math.abs(currentTranslate) < threshold) {
-            carouselInner.style.transform = `translateX(${prevTranslate}px)`;
-        } else {
-            const direction = currentTranslate < 0 ? 1 : -1;
-            carouselInner.style.transform = `translateX(${prevTranslate + direction * carousel.offsetWidth}px)`;
-            prevTranslate = prevTranslate + direction * carousel.offsetWidth;
-        }
-
-        carouselInner.style.transition = 'transform 0.5s ease';
-
-        // Remove event listeners after dragging ends
-        document.removeEventListener('mousemove', drag);
-        document.removeEventListener('mouseup', dragEnd);
-    }
-
-    prevButton.addEventListener('click', function() {
-        slide(-1);
-    });
-
-    nextButton.addEventListener('click', function() {
-        slide(1);
-    });
-
-    function slide(direction) {
-        const slideIndex = -currentTranslate / carousel.offsetWidth + direction;
-
-        if (slideIndex >= 0 && slideIndex < carouselInner.children.length) {
-            currentTranslate = -slideIndex * carousel.offsetWidth;
-            carouselInner.style.transform = `translateX(${currentTranslate}px)`;
-            prevTranslate = currentTranslate;
-            carouselInner.style.transition = 'transform 0.5s ease';
-        }
-    }
-});
-
-</script>
 </html>
