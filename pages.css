@@ -214,14 +214,18 @@ li a:hover {
 
 /*About*/
 .title {
-    padding-top: 150px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 .title h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 35px;
+    font-size: 50px;
 }
 
 .title p {
@@ -229,41 +233,39 @@ li a:hover {
     justify-content: center;
     align-items: center;
     font-size: 14px;
+    font-weight: 500;
 }
 
 .about {
+    padding-top: 160px;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
     display: flex;
-    margin: 0 10%;
-    padding-top: 100px;
     justify-content: center;
+    flex-direction: column;
+    background: url("img/group.jpeg") center/cover;
 }
 
-.about img {
-    width: 900px;
-    height: 500px;
-    border-radius: 8px;
-}
-.about img:hover {
-    
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .about p {
-    padding-left: 50px;
-    padding-top: 150px;
     text-align: justify;
 }
 
-.about p span {
-    font-size: 30px;
-    font-weight: 700;
-}
-
 .about-content{
-    margin: 0 10%;
     display: flex;
-    margin-top: 100px;
-    justify-content: space-between;
-    padding-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+    margin: 4%;
 }
 
 .about-content .mission {
@@ -274,6 +276,7 @@ li a:hover {
 .about-content h2 {
     text-align: center;
     padding-bottom: 10px;
+    font-size: 30px;
 }
 
 .about-content .vision {
@@ -282,7 +285,7 @@ li a:hover {
 }
 
 /*Members Gallery */
-.children{
+.members{
     margin: auto;
     text-align: center;
     display: flex;
@@ -292,28 +295,22 @@ li a:hover {
     background: url("pictures/2.2.png") center/cover;
     animation: fadeIn 2s;
 }
-.title h1{
-    font-size: 50px;
-    font-weight: 800;
-    color:#005E6A;
-    text-transform: uppercase;
-}
 .title p{
     font-size: 20px;
 }
-.children .info{
+.members .info{
     font-size: 20px;
     font-weight: 500;
     color: black;
 }
-.children .wrapper{
+.members .wrapper{
     padding-top: 50px;
     display: flex;
     width: 100%;
     justify-content: space-around;
     gap: 50px;
 }
-.children .cards{
+.members .cards{
     width: 360px;
     height: 300px;
     padding: 2rem 1rem;
@@ -324,10 +321,10 @@ li a:hover {
     box-shadow: 0px 7px 10px rgb(0, 0, 0, 0.5);
     transition: 0.5s ease-in-out;
 }
-.children .cards:hover{
+.members .cards:hover{
     transform: translateY(20px);
 }
-.children .cards:before{
+.members .cards:before{
     content: "";
     position: absolute;
     top: 0;
@@ -340,10 +337,10 @@ li a:hover {
     transition: 0.5s all;
     opacity: 0;
 }
-.children .cards:hover:before{
+.members .cards:hover:before{
     opacity: 1;
 }
-.children .cards img{
+.members .cards img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -351,7 +348,7 @@ li a:hover {
     top: 0;
     left: 0;
 }
-.children .cards .info{
+.members .cards .info{
     position: relative;
     z-index: 3;
     color: #fff;
@@ -359,24 +356,31 @@ li a:hover {
     transform: translateY(10px);
     transition: 0.5s all;
 }
-.children .cards:hover .info{
+.members .cards:hover .info{
     opacity: 1;
     transform: translateY(0px);
 }
-.children .cards .info h1{
+.members .cards .info h1{
     margin: 0;
     font-size: 20px;
     text-transform: capitalize;
     color: white;
 }
-.children .cards .info p{
+.members .cards .info p{
     letter-spacing: 1px;
     font-size: 12px;
     margin-top: 4px;
     margin-bottom: 5px;
 }
 .containers {
-    margin-bottom: 80px;
+    margin-bottom: 100px;
+    margin: 4%;
+}
+.members h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
 }
 .lg{
     display: flex;
@@ -517,6 +521,40 @@ li a:hover {
     color: #fff;
 }
 
+/*Contact us*/
+.contact{
+    background-color: #1E1F20;
+    color: white;
+    height: 20em;
+}
+.contact .title{
+    color: #02abb4;
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 40px;
+}
+.contact .up{
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+.contact .content .info{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    text-align: center;
+}
+.contact .label{
+    color: #01a7bc;
+    font-weight: 700;
+    font-size: 18px;
+}
+.contact .detail4{
+    text-decoration: none;
+    color: white;
+}
+
 /* Responsiveness */
 @media screen and (max-width: 1800px) {
     .main-container {
@@ -560,6 +598,9 @@ li a:hover {
     .main-container {
         padding-top: 0;
         margin-top: 0;
+    }
+    .title h1 {
+        font-size: 40px;
     }
 }
 
@@ -614,6 +655,13 @@ li a:hover {
     .main-container {
         padding-top: 0;
         margin-top: 0;
+    }
+    .title h1 {
+        font-size: 30px;
+    }
+    .title p {
+        font-size: 14px;
+        font-weight: 500;
     }
 }
 
