@@ -194,9 +194,6 @@ li a:hover {
     margin: 5px 0 0 10px;
     border-radius: 6px;
 }
-.main-container {
-    padding-top: 50px;
-}
 .quiz-title h1{
     font-size: 70px;
     font-weight: 800;
@@ -507,20 +504,41 @@ li a:hover {
     color: #005E6A;
 }
 
+/*Footer*/
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #005E6A;
+}
+.footer p {
+    font-size: 0.938rem;
+    color: #fff;
+}
+
 /* Responsiveness */
 @media screen and (max-width: 1800px) {
     .main-container {
         margin-top: 300px;
     }
-}
-
-@media (max-width: 1600px) {
-    .cards {
-    justify-content: center;
+    .main-container {
+        padding-top: 0;
+        margin-top: 0;
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1600px) {
+    .cards {
+    justify-content: center;
+    }
+    .main-container {
+        padding-top: 0;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 1400px) {
     .main-container {
         margin-top: 800px;
     }
@@ -528,12 +546,20 @@ li a:hover {
         width: 600px;
         height: 300px;
     }
+    .main-container {
+        padding-top: 0;
+        margin-top: 0;
+    }
 }
 
 @media screen and (max-width: 900px) {
     .navbar {
         display: none;
         transition: 3s ease-in;
+    }
+    .main-container {
+        padding-top: 0;
+        margin-top: 0;
     }
 }
 
@@ -560,6 +586,10 @@ li a:hover {
         font-size: 14px;
         border-radius: 40px;
     }
+    .main-container {
+        padding-top: 0;
+        margin-top: 0;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -580,6 +610,10 @@ li a:hover {
     .about img {
         width: 450px;
         height: 250px;
+    }
+    .main-container {
+        padding-top: 0;
+        margin-top: 0;
     }
 }
 
@@ -642,16 +676,54 @@ li a:hover {
         text-align: justify;
         overflow: scroll;
     }
-}
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-    background-color: #005E6A;
-}
-.footer p {
-    font-size: 0.938rem;
-    color: #fff;
+    .footer p {
+        font-size: 10px;
+    }
+    .main-container {
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .quiz-title h1{
+        font-size: 40px;
+        font-weight: 700;
+        padding-top: 100px;
+    }
+    .quiz-title p {
+        font-size: 14px;
+        max-width: 300px;
+    }
+    .quiz-title {
+        height: 40vh;
+    }
+    .card {
+        margin: 20px;
+        padding: 20px;
+        width: 300px;
+        min-height: 350px;
+        display: grid;
+        grid-template-rows: 20px 50px 1fr 50px;
+        border-radius: 10px;
+    }
+    .card__title {
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .card__apply {
+        grid-row: 4/5;
+        align-self: center;
+        font-weight: 500;
+        font-style: italic;
+    }
+    .container {
+        margin-top: 40px;
+        height: 230px;
+        width: 300px;
+    }
+    .container p {
+        font-size: 12px;
+    }
+    .card_img {
+        width: 280px;
+    }
 }
 
